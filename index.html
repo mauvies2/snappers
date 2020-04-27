@@ -13,8 +13,22 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <div class="ham-menu">
+        <div class="ham-menu" onclick="openNav()">
           <div class="center-line"></div>
+        </div>
+        <div id="nav-menuu" class="nav-menu">
+          <div class="ham-menu close" onclick="closeNav()">
+            <i class="fas fa-times close"></i>
+          </div>
+          <ul>
+            <li class="nav-logo"><a href="#">snappers</a></li>
+            <li class="open-nav-list"><a href="#">Home</a></li>
+            <li class="open-nav-list"><a href="#">How it works</a></li>
+            <li class="open-nav-list"><a href="#">Get Started</a></li>
+            <li class="open-nav-list"><a href="#">About</a></li>
+            <li class="open-nav-list"><a href="#">Contact</a></li>
+            <li class="open-nav-list"><a href="#"></a></li>
+          </ul>
         </div>
         <div class="nav-logo">
           <a href="./index.html">snappers</a>
@@ -37,36 +51,33 @@
           </ul>
         </div>
       </nav>
-      <div class="banner">
-        <div class="banner-text">
-          <h1>Getting shots is now easier</h1>
-        </div>
-        <div class="search-type">
-          <div class="search-find">Hire</div>
-          <div class="search-offer">Offer</div>
-        </div>
-        <div class="search-box">
-          <i class="fa fa-search"></i>
-          <input
-            type="text"
-            class="search-bar"
-            placeholder="Find Snapers/Users"
-          />
-          <div class="close-search">
-            <i class="fas fa-times"></i>
-          </div>
-        </div>
-        <div class="search-box">
-          <i class="fas fa-map-marker-alt"></i>
-          <input type="text" class="search-bar" placeholder="Location" />
-          <div class="close-search">
-            <i class="fas fa-times"></i>
-          </div>
-        </div>
-        <div class="search-button">Search</div>
-      </div>
+      
     </header>
     <main>
+      <section class="banner">
+          <div class="banner-text">
+            <h1>Getting shots is now easier</h1>
+          </div>
+          <div class="search-type">
+            <div class="search-find">Hire</div>
+            <div class="search-offer">Offer</div>
+          </div>
+          <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" class="search-bar" placeholder="Find Snapers/Users" />
+            <div class="close-search">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="search-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" class="search-bar" placeholder="Location" />
+            <div class="close-search">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="search-button">Search</div>
+      </section>
       <section class="find-content">
         <div class="find-content find">
           <h2 class="find-snappers">Find photographers in your area</h2>
@@ -171,7 +182,7 @@
               <img src="./images/Languages/EnglishUSA.png" alt="EEUU flag" />
             </div>
             <div class="language">
-              Eng
+              English
             </div>
             <div class="dropdown-language-icon">
               <i class="fas fa-caret-down"></i>
@@ -193,5 +204,13 @@
         <p>© 2020 Snappers Inc.</p>
       </div>
     </footer>
+    <script>
+      function openNav() {
+        document.getElementById("nav-menuu").classList.add("open");
+      }
+      function closeNav() {
+          document.getElementById("nav-menuu").classList.remove("open");
+        }
+    </script>
   </body>
 </html>
