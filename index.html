@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snappers</title>
+    <link rel="icon" href="./images/LogoSnappers.png">
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
@@ -18,7 +19,7 @@
         </div>
         <div id="nav-menuu" class="nav-menu">
           <div class="ham-menu close" onclick="closeNav()">
-            <a class="nav-logo" href="#">snappers</a>
+            <p class="nav-logo">snappers</p>
             <i class="fas fa-times close"></i>
           </div>
           <ul>
@@ -142,7 +143,7 @@
         <div class="feature3">
           <!-- <img src="#" alt="Feature 3 image" /> -->
           <h2 class="feature3 tittle">
-            Simplify your digital file delivery
+            Simplify your file delivery
           </h2>
           <p class="feature3 description">
             Share or sell full- or low-resolution digitals. You're in control of
@@ -154,6 +155,9 @@
       <section class="photo-exp">
         <div class="banner-exp">
           <h3 class="banner-exp tittle">They got these photos on snappers</h3>
+          <div class="offer-content find">
+            <img src="./images/Banner.jpg" alt="Offer photography Image" width="300px" />
+          </div>
           <p class="banner-exp text">
             We’re incredibly happy and proud to have sparked thousands of
             encounters and amazing shot stories. So please share your story with
@@ -171,17 +175,16 @@
           <a href="#" class="">Press</a>
           <a href="#" class="">We're Hiring!</a>
           <a href="#" class="">Contact</a>
-        </div>
-        <div class="footer-col">
-          <a href="#" class="">FAQ</a>
-          <a href="#" class="">Privacy</a>
-          <a href="#" class=""
-            >Terms</i
-          ></a>
           <a href="#" class="">Help</a>
         </div>
         <div class="footer-col">
-          <div class="lang-button">
+          <a href="#" class="">Frequently Asked Questions</a>
+          <a href="#" class="">Privacy</a>
+          <a href="#" class=""
+            >Terms of Services</i
+          ></a>
+          
+          <div class="lang-button" onclick="Lang()" onclick="closeLang()">
             <div class="flag">
               <img src="./images/Languages/EnglishUSA.png" alt="EEUU flag" />
             </div>
@@ -193,9 +196,27 @@
             </div>
           </div>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <ul id="drop-list" class="dropdown-list">
+              <li class="lang-list">
+              <div class="flag">
+                <img src="./images/Languages/EnglishUSA.png" alt="EEUU flag" />
+              </div>
+              <div class="dropdown-item" href="#">English</div>
+              </li>
+              <li class="lang-list">
+                <div class="flag">
+                  <img src="./images/Languages/EnglishUSA.png" alt="EEUU flag" />
+                </div>
+                <div class="dropdown-item" href="#">Portuguese</div>
+              </li>
+              <li class="lang-list">
+                <div class="flag">
+                  <img src="./images/Languages/EnglishUSA.png" alt="EEUU flag" />
+                </div>
+                <div class="dropdown-item" href="#">Spanish</div>
+              </li>
+            </ul>
+            
           </div>
           <div class="social-networks">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -208,13 +229,7 @@
         <p>© 2020 Snappers Inc.</p>
       </div>
     </footer>
-    <script>
-      function openNav() {
-        document.getElementById("nav-menuu").classList.add("open");
-      }
-      function closeNav() {
-          document.getElementById("nav-menuu").classList.remove("open");
-        }
+    <script type="text/javascript" src="./main.js">
     </script>
   </body>
 </html>

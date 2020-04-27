@@ -42,6 +42,7 @@ html {
 h1 {
   font-size: 3.2rem;
   letter-spacing: 5px;
+  font-weight: 100;
 }
 
 h2 {
@@ -76,24 +77,25 @@ body {
 }
 
 h2 {
-  padding: 2.5rem 2.5rem;
+  padding: 2rem 2.5rem;
   text-align: center;
 }
 
 h3 {
   font-size: 2.5rem;
-  padding: 2.5rem 2.5rem;
+  padding: 2rem 2.5rem;
   text-align: center;
 }
 
 p {
-  padding: 0 2.5rem;
+  padding: 1rem 2.5rem;
+  padding-bottom: 2rem;
   text-align: justify;
 }
 
 img {
   width: 100vw;
-  margin-top: 2.5rem;
+  /* margin-top: 1rem; */
 }
 
 /* Header */
@@ -166,7 +168,6 @@ img {
   border-radius: 5px;
   background-color: var(--header-font-color);
   position: absolute;
-  transition: all 0.2s ease-in-out;
 }
 .center-line::before {
   transform: translateY(-0.65rem);
@@ -212,7 +213,7 @@ img {
   color: var(--main-font-color);
   opacity: 0.7;
   font-weight: 800;
-  padding: 0 4rem;
+  padding: 0 13vw;
 }
 .nav-menu ul {
   width: 100%;
@@ -329,7 +330,8 @@ img {
 .find-content img,
 .offer-content img {
   width: 90%;
-  margin: 2.5rem 0;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
 }
 
@@ -347,15 +349,19 @@ img {
   background-color: #f3f3f3;
 }
 
+.photo-exp {
+  background-color: #f3f3f3;
+  padding-bottom: 3rem;
+}
+
 /* Footer */
 
 .footer {
   font-weight: 100;
   line-height: 1.5;
-  margin-top: 5rem;
   background-color: var(--main-color);
-  padding: 2.5rem 2.5rem 0.2rem 3rem;
-  height: 50vh;
+  padding: 4rem 2.5rem 0rem 3rem;
+  height: 65vh;
 }
 
 .footer-content {
@@ -366,14 +372,13 @@ img {
 }
 
 .footer-col {
-  width: 33.333%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
 .register-company {
   font-size: 0.8rem;
-  height: 20%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -385,7 +390,7 @@ header .social-networks a i {
   margin-top: 1.5rem;
   display: flex;
   padding: 0 2rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 .social-networks {
   margin-top: 2rem;
@@ -393,40 +398,60 @@ header .social-networks a i {
   justify-content: space-around;
 }
 
-.dropdown-menu {
-  display: none;
-}
-
-.footer-col .flag {
-  /* width: 20%;
-  min-width: 1.4rem; */
-  height: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer-col img {
-  margin: 0;
-  padding: 0;
+  margin: 0 0.3rem;
+  width: 1.2rem;
+  height: 0.8rem;
+}
+
+.dropdown-menu img {
+  margin: 0 0.3rem;
   width: 1.2rem;
   height: 0.8rem;
 }
 
 .lang-button {
-  margin-top: 2rem;
-  width: 100%;
+  margin-top: 1.5rem;
+  width: 10rem;
   height: 2rem;
   background-color: var(--header-font-color);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 2px;
 }
 
+.lang-list {
+  width: 10rem;
+  height: 2rem;
+  background-color: var(--header-font-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid var(--main-font-color);
+}
+
+.dropdown-menu {
+  position: relative;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.openLangu {
+  z-index: 0;
+}
+
+.dropdown-item {
+  color: var(--main-font-color);
+}
+
 .language {
-  text-align: center;
-  padding-left: 0.3rem;
+  width: 70%;
+  padding: 0.3rem 0;
 }
 
 .dropdown-language-icon {
@@ -441,7 +466,7 @@ header .social-networks a i {
 /* HOVER EFFECTS */
 
 .search-button:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(110, 108, 108, 0.3);
 }
 
 .nav-menu ul li:hover {
