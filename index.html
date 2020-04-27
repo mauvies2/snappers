@@ -13,8 +13,27 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <div class="ham-menu">
+        <div class="ham-menu" onclick="openNav()">
           <div class="center-line"></div>
+        </div>
+        <div id="nav-menuu" class="nav-menu">
+          <div class="ham-menu close" onclick="closeNav()">
+            <a class="nav-logo" href="#">snappers</a>
+            <i class="fas fa-times close"></i>
+          </div>
+          <ul>
+            <li class="open-nav-list"><a href="#">Home</a></li>
+            <li class="open-nav-list"><a href="#">How it works</a></li>
+            <li class="open-nav-list"><a href="#">Get Started</a></li>
+            <li class="open-nav-list"><a href="#">About</a></li>
+            <li class="open-nav-list"><a href="#">Contact</a></li>
+            <li class="open-nav-list"><a href="#"></a></li>
+          </ul>
+          <div class="social-networks">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
         <div class="nav-logo">
           <a href="./index.html">snappers</a>
@@ -47,11 +66,7 @@
         </div>
         <div class="search-box">
           <i class="fa fa-search"></i>
-          <input
-            type="text"
-            class="search-bar"
-            placeholder="Find Snapers/Users"
-          />
+          <input type="text" class="search-bar" placeholder="Find Snapers" />
           <div class="close-search">
             <i class="fas fa-times"></i>
           </div>
@@ -86,7 +101,7 @@
       <section class="offer-content">
         <div class="offer-content find">
           <h2 class="find-snappers">
-            Offer your services and start shooting people
+            Offer your shots
           </h2>
           <p class="find-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et
@@ -171,7 +186,7 @@
               <img src="./images/Languages/EnglishUSA.png" alt="EEUU flag" />
             </div>
             <div class="language">
-              Eng
+              English
             </div>
             <div class="dropdown-language-icon">
               <i class="fas fa-caret-down"></i>
@@ -193,5 +208,13 @@
         <p>© 2020 Snappers Inc.</p>
       </div>
     </footer>
+    <script>
+      function openNav() {
+        document.getElementById("nav-menuu").classList.add("open");
+      }
+      function closeNav() {
+          document.getElementById("nav-menuu").classList.remove("open");
+        }
+    </script>
   </body>
 </html>
