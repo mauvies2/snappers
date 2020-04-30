@@ -14,9 +14,36 @@ function Lang() {
   }
 }
 
-// function closeLang() {
-//   const newLocal = "dropdown-list openLangu";
-//   if (document.getElementById("drop-list").classList[1] === openLangu) {
-//     document.getElementById("drop-list");
-//   }
-// }
+function typeButton() {
+  const inputValue = document.getElementById("close-search").value;
+  if (inputValue.length > 1) {
+    return true;
+  } else if (inputValue[0] != null) {
+    document.getElementById("close-icon-search").classList.add("show");
+  }
+}
+
+function typeButton2() {
+  const inputValue = document.getElementById("close-search-location").value;
+  if (inputValue.length > 1) {
+    return true;
+  } else if (inputValue[0] != null) {
+    document.getElementById("close-icon-location").classList.add("show");
+  }
+}
+
+// Interacción del boton de búsqueda en el Banner
+const closeIcon = document.getElementById("close-icon-search");
+closeIcon.addEventListener("click", function () {
+  let element = document.getElementById("close-search");
+  element.value = null;
+  closeIcon.classList.remove("show");
+});
+
+// Interacción del boton de ubicación en el Banner
+const closeIconUbic = document.getElementById("close-icon-location");
+closeIconUbic.addEventListener("click", function () {
+  let element = document.getElementById("close-search-location");
+  element.value = null;
+  closeIconUbic.classList.remove("show");
+});

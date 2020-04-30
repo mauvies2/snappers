@@ -67,16 +67,16 @@
         </div>
         <div class="search-box">
           <i class="fa fa-search"></i>
-          <input type="text" class="search-bar" placeholder="Find Snapers" />
-          <div class="close-search">
-            <i class="fas fa-times"></i>
+          <input id="close-search" type="text" class="search-bar" placeholder="Find Snapers" oninput="typeButton()" />
+          <div id="close-icon-search" class="close-icon-search">
+            <i  class="fas fa-times"></i>
           </div>
         </div>
         <div class="search-box">
           <i class="fas fa-map-marker-alt"></i>
-          <input type="text" class="search-bar" placeholder="Location" />
-          <div class="close-search">
-            <i class="fas fa-times"></i>
+          <input id="close-search-location" type="text" class="search-bar" placeholder="Location" oninput="typeButton2()"/>
+          <div id="close-icon-location" class="close-icon-location" >
+            <i  class="fas fa-times"></i>
           </div>
         </div>
         <div class="search-button">Search</div>
