@@ -217,18 +217,14 @@ img {
   height: 2.5em;
   border-radius: 50%;
   background-color: rgba(226, 226, 226, 1);
-  position: relative;
 }
+
 .social-icons:hover {
   background-color: rgba(200, 200, 200, 0.8);
 }
 header .social-networks a i {
   color: black;
   opacity: 0.7;
-  /* margin-top: 1.5rem; */
-  display: flex;
-  padding: 0 2rem;
-  justify-content: center;
 }
 
 .nav-menu div i {
