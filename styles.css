@@ -95,15 +95,14 @@ p {
 
 img {
   width: 100vw;
-  /* margin-top: 1rem; */
 }
 
 /* Header */
 
 .header {
   width: 100%;
-  height: 100vh;
-  min-height: 812px;
+  height: 50vh;
+  min-height: 800px;
   background: linear-gradient(
       0deg,
       rgba(31, 19, 1, 0.5) 0%,
@@ -113,6 +112,8 @@ img {
   background-size: cover;
   color: var(--header-font-color);
 }
+
+/* Navigation bar */
 
 .navbar {
   width: 100%;
@@ -176,89 +177,6 @@ img {
   transform: translateY(0.65rem);
 }
 
-.nav-menu {
-  width: 60%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.98);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  z-index: 99;
-  color: var(--main-font-color);
-  border-right: 2px solid rgba(0, 0, 0, 0.2);
-  left: -60%;
-  transition: 250ms ease-in-out;
-}
-
-.open {
-  transition: 250ms ease-in-out;
-  left: 0;
-}
-
-.close {
-  padding: 3rem 0;
-}
-
-.social-networks {
-  margin-top: 2rem;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  background-color: rgba(226, 226, 226, 1);
-}
-
-.social-icons:hover {
-  background-color: rgba(200, 200, 200, 0.8);
-}
-header .social-networks a i {
-  color: black;
-  opacity: 0.7;
-}
-
-.nav-menu div i {
-  font-size: 1.5rem;
-  z-index: 100;
-  opacity: 0.7;
-}
-
-.nav-menu .nav-logo {
-  color: var(--main-font-color);
-  opacity: 0.7;
-  font-weight: 800;
-  padding: 0 13vw;
-}
-.nav-menu ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.nav-menu li {
-  padding: 0.6rem 0;
-  width: 100%;
-  border-top: 1px solid rgba(70, 69, 69, 0.2);
-}
-
-.li-contact {
-  border-bottom: 1px solid rgba(70, 69, 69, 0.2);
-}
-
-.nav-menu ul li a {
-  color: var(--main-font-color);
-}
-
 .nav-logo {
   font-family: var(--logo-font-style), sans-serif;
   font-size: 2.3em;
@@ -283,15 +201,103 @@ header .social-networks a i {
   font-size: 1.4em;
 }
 
-.banner {
+/* Navigation Menu */
+
+.nav-menu {
+  width: 60%;
   height: 100vh;
+  background-color: rgba(255, 255, 255, 0.98);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  z-index: 99;
+  color: var(--main-font-color);
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  left: -60%;
+  transition: 250ms ease-in-out;
+}
+
+.open {
+  transition: 250ms ease-in-out;
+  left: 0;
+}
+
+.close {
+  padding: 3rem 0;
+}
+
+.nav-menu .nav-logo {
+  color: var(--main-font-color);
+  opacity: 0.7;
+  font-weight: 800;
+  padding: 0 13vw;
+}
+
+.nav-menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* background-color: coral; */
+}
+.nav-menu li {
+  padding: 0.6rem 0;
+  /* width: 100%; */
+  border-top: 1px solid rgba(70, 69, 69, 0.2);
+}
+.nav-menu li:hover {
+  background-color: rgba(220, 220, 220, 0.4);
+}
+
+.li-contact {
+  border-bottom: 1px solid rgba(70, 69, 69, 0.2);
+}
+
+.nav-menu ul li a {
+  color: var(--main-font-color);
+}
+
+.social-networks {
+  margin-top: 2rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.social-icons:hover {
+  background-color: rgba(200, 200, 200, 0.8);
+}
+
+.nav-menu div i {
+  color: black;
+  font-size: 1.5rem;
+  z-index: 100;
+  opacity: 0.7;
+}
+
+/* Banner */
+
+.banner {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* margin-top: calc(4rem + 15vh); */
   padding: 0 6rem;
 }
 
@@ -311,14 +317,14 @@ header .social-networks a i {
   background-color: var(--header-font-color);
   align-items: center;
   margin: 0.6rem 0;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .banner input {
   background-color: var(--header-font-color);
   border: none;
   height: 2rem;
-  width: 11.5rem;
+  width: 68%;
   font-size: 1rem;
 }
 
@@ -328,15 +334,15 @@ header .social-networks a i {
 
 .search-box i {
   color: var(--main-font-color);
+  width: 5%;
   opacity: 0.5;
   margin: 0 15px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .close-icon-search,
 .close-icon-location {
   display: none;
-  font-size: 1.1rem;
 }
 
 .show {
@@ -357,6 +363,10 @@ header .social-networks a i {
   border-radius: 15px;
   backdrop-filter: blur(15px);
   cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: rgba(110, 108, 108, 0.3);
 }
 
 /* Find Snappers/Users */
@@ -409,6 +419,10 @@ header .social-networks a i {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
 }
 
 .register-company {
@@ -485,14 +499,6 @@ header .social-networks a i {
 /* MEDIA QUERIES */
 
 /* HOVER EFFECTS */
-
-.search-button:hover {
-  background-color: rgba(110, 108, 108, 0.3);
-}
-
-.nav-menu ul li:hover {
-  background-color: rgba(220, 220, 220, 0.4);
-}
 
 /* .ham-menu:hover .center-line {
   background-color: #292929;
