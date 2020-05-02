@@ -193,7 +193,7 @@ img {
 .nav-list-mobile ul {
   display: flex;
   justify-content: space-between;
-  width: 4rem;
+  width: 4.5rem;
   margin-right: 15px;
 }
 
@@ -245,27 +245,40 @@ img {
   /* background-color: coral; */
 }
 .nav-menu li {
-  padding: 0.6rem 0;
+  display: flex;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
   /* width: 100%; */
-  border-top: 1px solid rgba(70, 69, 69, 0.2);
+  /* border-top: 1px solid rgba(70, 69, 69, 0.2); */
 }
 .nav-menu li:hover {
   background-color: rgba(220, 220, 220, 0.4);
 }
 
-.li-contact {
+/* .li-contact {
   border-bottom: 1px solid rgba(70, 69, 69, 0.2);
+} */
+.nav-menu ul li div {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.nav-menu ul li div i {
+  font-size: 1.2rem;
+  color: black;
+  opacity: 0.6;
+}
 .nav-menu ul li a {
+  padding: 0 1rem;
   color: var(--main-font-color);
 }
 
 .social-networks {
   margin-top: 2rem;
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .social-icons {
   display: flex;
@@ -281,11 +294,16 @@ img {
   background-color: rgba(200, 200, 200, 0.8);
 }
 
-.nav-menu div i {
+.nav-menu i {
   color: black;
   font-size: 1.5rem;
   z-index: 100;
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+.ham-menu i {
+  font-size: 1.1rem;
+  opacity: 0.5;
 }
 
 /* Banner */
@@ -295,7 +313,7 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   padding: 0 6rem;
@@ -303,7 +321,7 @@ img {
 
 .banner-text {
   color: var(--header-font-color);
-  padding: 4rem 0;
+  margin: 7rem 0 4rem;
 }
 
 .search-type {
@@ -360,7 +378,7 @@ img {
   font-weight: bold;
   margin: 0.6rem 0;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius: 10px;
   backdrop-filter: blur(15px);
   cursor: pointer;
 }
@@ -497,8 +515,6 @@ img {
 /* ANIMATIONS */
 
 /* MEDIA QUERIES */
-
-/* HOVER EFFECTS */
 
 /* .ham-menu:hover .center-line {
   background-color: #292929;
