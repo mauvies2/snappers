@@ -30,6 +30,8 @@ ul {
 
   --main-font-style: "Roboto";
   --logo-font-style: "Amatic SC";
+
+  --brand-color: #724747;
 }
 
 /* TYPOGRAPHY */
@@ -145,12 +147,11 @@ img {
 }
 
 .ham-menu {
-  width: 2rem;
+  width: 4.5rem;
   height: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  position: relative;
   cursor: pointer;
 }
 .center-line {
@@ -213,7 +214,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
   z-index: 99;
   color: var(--main-font-color);
   border-right: 2px solid rgba(0, 0, 0, 0.2);
@@ -229,12 +229,16 @@ img {
 .close {
   padding: 3rem 0;
 }
+.ham-menu .close {
+  display: flex;
+  justify-content: flex-start;
+}
 
 .nav-menu .nav-logo {
   color: var(--main-font-color);
   opacity: 0.7;
   font-weight: 800;
-  padding: 0 13vw;
+  margin-right: 15vw;
 }
 
 .nav-menu ul {
